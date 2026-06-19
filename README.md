@@ -6,7 +6,7 @@ A production-grade, highly available web application deployed on AWS using EC2 A
 
 ## 🏗️ Architecture
 
-![VPC Architecture](screenshots/vpc-architecture.png)
+![VPC Architecture](vpc-architecture.png)
 
 ```
 Internet
@@ -43,21 +43,21 @@ Auto Scaling Group (min: 1, desired: 2, max: 4)
 ## 📸 Project Screenshots
 
 ### App Running via Load Balancer
-![App Running](screenshots/app-running.png)
+![App Running](app-running.png)
 
 ### Target Group — Healthy Instances
-![Target Group](screenshots/target-group-healthy.png)
+![Target Group](target-group-healthy.png)
 
 ### Auto Scaling Activity History
 Auto Scaling automatically launched and terminated instances based on CPU load and health checks.
 
-![Activity History](screenshots/activity-history.png)
+![Activity History](activity-history.png)
 
 ### CloudWatch Alarms
 - **AlarmHigh** — triggers scale UP when CPU > 70% for 3 datapoints
 - **AlarmLow** — triggers scale DOWN when CPU < 49% for 15 datapoints
 
-![CloudWatch Alarms](screenshots/cloudwatch-alarms.png)
+![CloudWatch Alarms](cloudwatch-alarms.png)
 
 ---
 
